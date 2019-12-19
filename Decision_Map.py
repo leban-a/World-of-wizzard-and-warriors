@@ -6,6 +6,7 @@ from PC import*
 from Checks import*
 from Battle import*
 
+#This will will handle all decisons which require user input or interaction
 
 class Talihu_Decisons():
 
