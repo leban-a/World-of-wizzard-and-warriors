@@ -9,7 +9,7 @@ from Loading import*
 
 class Checks():
 
-    def skill_check(self,parameters): # skill_check determines if a player is succesful at an attempt to perform a certain action.
+    def skill_check(parameters): # skill_check determines if a player is succesful at an attempt to perform a certain action.
 
         # multiple paramters will always be passed in the form of a tuple:
 
@@ -24,7 +24,7 @@ class Checks():
 
 
 
-    def initiative_check(self,NPC_Name):# Initiative determines which player will have the first move when fight scene begins
+    def initiative_check(NPC_Name):# Initiative determines which player will have the first move when fight scene begins
 
         #Initiative Bonus
         PC_initiative =  PC["Stats"]["Initiative"]
@@ -34,7 +34,7 @@ class Checks():
 
         return start
 
-    def death_saving_throw(self): # When PC falls unconsious death saving throw will be called giving the player a chance to restore some hit points.
+    def death_saving_throw(): # When PC falls unconsious death saving throw will be called giving the player a chance to restore some hit points.
 
         current_Hit_Points = PC["Stats"]["CHP"]["Current"]
 

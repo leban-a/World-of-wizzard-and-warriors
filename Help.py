@@ -4,7 +4,7 @@ class Help(): # Gudies related to playing the game and walkthroughs
 
 
 
-    def guide(self): #User is provided the option to view help guides for the game
+    def guide(): #User is provided the option to view help guides for the game
 
 
         gap()

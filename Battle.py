@@ -55,7 +55,7 @@ class Battle():
 
         elif condition == False:
 
-            print("> You failed to defuse the situation, your going to have to fight"),(2)
+            print("> You failed to defuse the situation, your going to have to fight"),sec(2)
             self.fight = True
 
     # PC battle control.

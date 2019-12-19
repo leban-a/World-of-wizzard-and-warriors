@@ -77,7 +77,7 @@ class Characters(): #Stores Player Charaters
 
 
 
-    def print_C(self,level1): # Prints entire character Bio  with some formatting
+    def print_C(level1): # Prints entire character Bio  with some formatting
     # crlevle represents the depth when accessing sub dict's.
     #Level1 = Character ID
 

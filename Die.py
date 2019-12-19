@@ -221,7 +221,7 @@ class Die():  # Handles all actions which utilize a Dice Roll
                 print("\n{} has dealt a total of {} Hit Points".format(NPC_Name,total_damage))
                 return total_damage
 
-    def death_saving_throw(self,PC_health):
+    def death_saving_throw(PC_health):
 
 
         prompt()

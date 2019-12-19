@@ -2,7 +2,7 @@ from Loading import*
 
 class Sentence_Handler():
 
-    def sort_words(self,sentence,lexicon): # Checks words against Lexicon list, then pairs the key and values
+    def sort_words(sentence,lexicon): # Checks words against Lexicon list, then pairs the key and values
 
         result = [] #Match words store in a list.
         words = sentence.lower().split() #split sentence and converts to lower
@@ -36,7 +36,7 @@ class Sentence_Handler():
 
         return result
 
-    def string_to_int(self,word): # converts "str" to "int": str("One") and str("1")  to int(1)
+    def string_to_int(word): # converts "str" to "int": str("One") and str("1")  to int(1)
 
 
         #if word in Dictionary.numbers:    # number in word form to int
@@ -47,7 +47,7 @@ class Sentence_Handler():
         except ValueError:
             return word
 
-    def parser(self,word_list,type):  #checks the sorted words and converts them into a usable sentence.
+    def parser(word_list,type):  #checks the sorted words and converts them into a usable sentence.
         # type of sentence being looked at: different setences will have different requirements.
 
 
@@ -132,7 +132,7 @@ class Sentence_Handler():
             except AssertionError as error:
                 print(error)
 
-    def word_filter(self,check,tuple, list, sentence_type, method, parameters):
+    def word_filter(check,tuple, list, sentence_type, method, parameters):
         # Bad Code Below:
         # This is an absolute disaster.
         # At the momment it seems to serve the purpose but
