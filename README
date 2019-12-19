@@ -1,0 +1,125 @@
+
+I'm currently working through Learning Python the Hard Way V3.0. 
+In one of the last tasks a game needed to be created, I had created a small room text based game in an earlier task and needed to develope 
+on that. Using new gained skills. I wanted to do something a little different but was stuck for an idea, so after watch some stranger things. 
+i thought i'd try create something based on Dungeons and Drangons.
+
+I've incorparted a few features from D&D:
+Character Selection
+Rolling
+Fighting 
+
+It's not the most exciting game and I have definetly done D&D a disserive:
+I've only created one scene to test the features. 
+
+I've added as much commenting as i thought neccessary:
+I have followed some bad practices which I will hope to improve on. 
+
+All feedback would greatly be appreciated. 
+
+Also any advice on how i could improve the code. 
+ *Sentence.py 
+
+I hope to return and improve on this game, but for meantime i need to return to learning. 
+
+
+Below is a walkthrough.
+
+use Engine.py to run the game.
+
+PC = player character / NPC = non player character
+
+~  ~ = NPC Speech
+*  * = PC Speech
+>  > = Scene and action description
+... = press enter to continue
+
+Keywords can be found in: Dictionary.py ||  {} = dict
+
+Step 1: Enter Name
+
+Step 2: access help guide: (No Guide present yet)
+
+Step 3: Select Character to View
+
+Step 4: Choose playable character:
+
+[Game will now start]
+[Scene Yalids Inn]
+[Scene Description]
+
+Step 4: What do want to do? [Get a room or Need to Eat] {
+
+key words {room_or_bar}: [get a drink /  i need a room]
+
+If room :
+1) Do you know what room [Yes or No] {room_yes_no}
+
+[If no rooms listed]
+
+2) Choose type of room:
+keysword {choose_room}: [small,double,large,queen]
+
+elif Bar:
+[Scene Descrition]
+
+Step 5: Find out what the NPC's are talking about using a skills:
+keyword {get_more_informarion}: [Intimidate/Investigate/Persuade]
+
+each will involve a skill check where you will roll the die:
+each can has a positive and negative result.
+
+if you fail:
+  use another tactics
+  [intimidate] if used a fight can start
+
+
+If Fight:
+
+initiative roll: Roll to determine fight order:
+
+if you(PC) roll highest you can defuse the situation or choose to fight:
+keywords: fight / defuse
+
+if defuse:
+you will roll again.
+
+pass = fight defused:
+fail = fight
+
+if NPC rolls highest fight will go ahead
+
+fighting:
+
+PC and NPC will take turns to make and attack:
+
+PC
+step 1: Choose weapon:
+
+Piril : warhammer / Handaxe
+Elkas : javelin / greataxe
+
+step 2: attack roll
+
+step 3: damage roll
+
+
+process will repeat untill either PC or NPC is unconscious or Dead.
+
+death = <0 Hit Points
+unconscious = ==0 Hitpoints
+
+if you fall unconsious:
+
+Perform Death saving throw:
+roll 3 saves and you live
+roll 3 fails you die.
+
+if NPC is killed or unconscious you are able to get the information you need.
+
+if you lose the fight and live you will have to get the information another way.
+
+you will have to stay in the hotel for the  night if you got a room in the beginning you will go to your room to sleep
+else: you will go book a room.
+
+End of Scene.
