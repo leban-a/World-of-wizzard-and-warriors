@@ -79,7 +79,7 @@ class Talihu_Decisons():
             size = parameters
 
 
-            if self.room_set == False:
+            if self.room_set is False:
                 print("~ Sure ~")
                 print("\n~ We're going to get the {} room ready for you ~".format(size)),sec(2)
                 print("\n~ It shoudldn't take too long ~"),sec(2)
@@ -88,7 +88,7 @@ class Talihu_Decisons():
                 self.go_bar()
                 self.room_set= True
 
-            elif self.room_set == None:
+            elif self.room_set is None:
                 print("~ Sure ~")
                 print("\n~We have a {} room ready for you ~".format(size)),sec(2)
                 print("\n~ If you'd like to follow me ~")
@@ -166,7 +166,7 @@ class Talihu_Decisons():
             print("\n> facing towrads the stage as to appear discrete"),sec(2)
             print("\n> You listen intently to thier conversation"),sec(2)
 
-            if condition == True:
+            if condition is True:
                 prompt()
                 print("|Ork| ~ I couldn't do anything ~ "),sec(2)
                 print("\n|Ork| ~ There were to many of them ~"),sec(2)
@@ -200,7 +200,7 @@ class Talihu_Decisons():
             print("* I couldn't help but over ear your conversation *"),sec(2)
             print("\n* Did you have some trouble coming into the city? *"),sec(2)
 
-            if condition == True:
+            if condition is True:
                 prompt()
                 print("|Human 2| ~ If you can call it that ~"),sec(2)
                 print("\n|Human 3| ~ We were heading to the Citadel ~"),sec(2)
@@ -289,7 +289,7 @@ class Talihu_Decisons():
 
 
 
-            if condition == True:
+            if condition is True:
                 prompt()
                 print("|Human 3| ~ Of course, . ~"),sec(2)
                 print("\n|Human 3| ~ We were coming down Lapque ~"),sec(2)
@@ -402,7 +402,7 @@ class Talihu_Decisons():
             print("\n> You continue to think whilst listening to the melody"),sec(2)
             print("\n> It's getting late, you need to get some sleep"),sec(2)
 
-            if (self.room_set == True) and (self.information_gathered == False):
+            if (self.room_set is True) and (self.information_gathered is False):
 
                 print("\n> Yalid approaches your table"),sec(2)
                 prompt()
@@ -422,7 +422,7 @@ class Talihu_Decisons():
                 self.information_gathered = True
 
 
-            elif (self.room_set == False) and (self.information_gathered == False):
+            elif (self.room_set is False) and (self.information_gathered is False):
 
                 print("\n> You head out of the bar back towards the reception"),sec(2)
                 print("\n> Yalid is standing behind the table. "),sec(2)
@@ -446,7 +446,7 @@ class Talihu_Decisons():
                 self.get_room()
 
 
-            elif (self.room_set == False) and (self.information_gathered == True):
+            elif (self.room_set is False) and (self.information_gathered is True):
 
                 print("\n> You head out of the bar back towards the reception"),sec(2)
                 print("\n> Yalid is standing behind the table. "),sec(2)
@@ -458,7 +458,7 @@ class Talihu_Decisons():
                 self.get_room()
 
 
-            elif (self.room_set == True) and (self.information_gathered == True):
+            elif (self.room_set is True) and (self.information_gathered is True):
 
                 print("\n> Yalid approaches your table"),sec(2)
                 prompt()
