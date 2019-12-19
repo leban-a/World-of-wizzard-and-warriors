@@ -1,0 +1,82 @@
+use Engine.py to run the game.
+PC = player character / NPC = non player character
+
+~  ~ = NPC Speech
+*  * = PC Speech
+>  > = Scene and action description
+... = press enter to continue
+
+Keywords can be found in: Dictionary.py
+
+Step 1: Enter Name
+Step 2: access help guide: (No Guide present yet)
+Step 3: View and choose playable character:
+[Game will now start]
+[Scene Yalids Inn]
+Step 4: Get a room or go to the bar
+key words: get a drink /  i need a room
+
+room :
+1) yes no
+2) small double large queen
+Step 5: Find out what the Non player characters are talking about:
+
+
+key words: intimidate/investigate/persuade
+each will involve a skill check where you will roll the die:
+each can has a positive and negative result.
+
+if you fail:
+  step 6: use another tactics
+  key words intimidate [if used a fight can start]
+
+
+If Fight:
+
+  initiative roll: Roll to determine fight order:
+
+if you(PC) roll highest you can defuse the situation or choose to fight:
+keywords: fight / defuse
+
+if defuse:
+you will roll again.
+
+pass = fight defused:
+fail = fight
+
+if NPC rolls highest fight will go ahead
+
+fighting
+
+PC and NPC will take turns to make and attack:
+
+PC
+step 1: Choose weapon:
+
+Piril : warhammer / Handaxe
+Elkas : javelin / greataxe
+
+step 2: attack roll
+
+step 3: damage roll
+
+
+process will repeat untill either PC or NPC is unconscious or Dead.
+
+death = <0 Hit Points
+unconscious = ==0 Hitpoints
+
+if you fall unconsious:
+
+Death saving throw.
+roll 3 saves and you live
+roll 3 fails you die.
+
+if NPC is killed or unconscious you are able to get the information you need.
+
+if you lose the fight and live you will have to get the information another way.
+
+you will have to stay in the hotel for the  night if you got a room in the beginning you will go to your room to sleep
+else: you will go book a room.
+
+End of Scene.
