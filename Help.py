@@ -45,13 +45,13 @@ class Help(): # Gudies related to playing the game and walkthroughs
 
 
         skip()
-        Help().guide()
+        Help.guide()
 
     def introduction(): #will be added at a later date
         print("\nThis is the Introduction\n")
 
         skip()
-        Help().guide()
+        Help.guide()
 
         #Game Guides stored in dictionary
     manuals= {'Manual':manual,'Introduction':introduction}
