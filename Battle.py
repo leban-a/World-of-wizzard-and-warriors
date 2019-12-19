@@ -47,13 +47,13 @@ class Battle():
 
         gap()
 
-        if condition == True:
+        if condition is  True:
 
             print("> You've managed to defuse the situation"),sec(2)
             self.fight = False
 
 
-        elif condition == False:
+        elif condition is False:
 
             print("> You failed to defuse the situation, your going to have to fight"),sec(2)
             self.fight = True
@@ -101,7 +101,7 @@ class Battle():
         attack =  Die().attack_roll(NPC[self.NPC_Name]["Armour Class"], player, self.NPC_Name,atk_bonus)
 
 
-        if attack == True:
+        if attack is True:
 
             die = PC["Attacks and Spells"][weapon]["Damage"]["Die"]
             rolls = PC["Attacks and Spells"][weapon]["Damage"]["Rolls"]
@@ -232,7 +232,7 @@ class Battle():
             # Depending on who won the battle and how a differnt action will be called.
             if  (PC["Stats"]["CHP"]["Current"] == PC["Stats"]["CHP"]["Max"]):
                 print("You've fallen unconsious")
-                outcome =  Checks().death_saving_throw()
+                outcome =  Checks.death_saving_throw()
 
             elif (PC["Stats"]["CHP"]["Current"] > PC["Stats"]["CHP"]["Max"]):
                 print("You've been killed")

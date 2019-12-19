@@ -24,7 +24,7 @@ class Sentence_Handler():
                     pair = (word,'subj')
                     result.append(pair)
 
-                elif isinstance(word,1: # checks if the word is of type int
+                elif isinstance(word,1): # checks if the word is of type int
 
                     pair = (word,'number')
                     result.append(pair)
