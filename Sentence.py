@@ -24,7 +24,7 @@ class Sentence_Handler():
                     pair = (word,'subj')
                     result.append(pair)
 
-                elif type(word) == type(1): # checks if the word is of type int
+                elif isinstance(word,1: # checks if the word is of type int
 
                     pair = (word,'number')
                     result.append(pair)
@@ -47,7 +47,7 @@ class Sentence_Handler():
         except ValueError:
             return word
 
-    def parser(word_list,type):  #checks the sorted words and converts them into a usable sentence.
+    def parser(word_list,sentence_type):  #checks the sorted words and converts them into a usable sentence.
         # type of sentence being looked at: different setences will have different requirements.
 
 
@@ -92,33 +92,33 @@ class Sentence_Handler():
 
         # this will ensure that the correct words that are needed are present depending on setence typ
 
-        if type == 'sentence':
+        if sentence_type == 'sentence':
             assert (verb != None),("[A verb was expected]")
             assert (noun != None),("[A noun was expected]")
 
-        elif type == 'direction':
+        elif sentence_type == 'direction':
             assert (verb != None),("[A verb was expected]")
             assert (direction != None),("[A direction was expected]")
 
-        elif type == 'number':
+        elif sentence_type == 'number':
             assert (number != None),("[A number was expected]")
 
-        elif type == 'simple':
+        elif sentence_type == 'simple':
             assert (verb != None),("[A verb was expected]")
 
-        elif type == 'skill':
+        elif sentence_type == 'skill':
             assert (skill != None),("[A skill was expected]")
 
-        elif type == 'action':
+        elif sentence_type == 'action':
             assert (action != None),("[A action was expected]")
 
-        elif type == 'weapon':
+        elif sentence_type == 'weapon':
             assert (weapon != None),("[A weapon was expected]")
         gap()
 
         return(subj,verb,noun,skill,weapon,action,direction,number) #set of usable words returned.
 
-    def scanner(self,lexicon,type): #combines sort_word and parser
+    def scanner(self,lexicon,sentence_type): #combines sort_word and parser
 
         while  True:  # will continue to loop if user doesn't enter the required words will also inform user of the type of word that is needed
             gap()
@@ -126,7 +126,7 @@ class Sentence_Handler():
             word_list = self.sort_words(sentence,lexicon)
 
             try:
-                phrase = self.parser(word_list,type)
+                phrase = self.parser(word_list,sentence_type)
                 return phrase
                 break
             except AssertionError as error:
